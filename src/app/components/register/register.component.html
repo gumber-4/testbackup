@@ -1,0 +1,58 @@
+<h3>Register for the event</h3>
+<form #myForm="ngForm" (ngSubmit)="register(myForm)">
+  <div class="main">
+    <div class="inp">
+      <input
+        type="text"
+        required
+        #name="ngModel"
+        name="name"
+        placeholder="Full Name"
+        ngModel
+      />
+      <!-- <span *ngIf="name.invalid && name.touched">*Please enter your name</span> -->
+    </div>
+    <span *ngIf="name.invalid && name.touched">Please enter your Name</span>
+
+    <div class="inp">
+      <input
+        type="number"
+        required
+        #age="ngModel"
+        name="age"
+        placeholder="Age"
+        min="19"
+        max="23"
+        ngModel
+      />
+      <!-- <span *ngIf="name.invalid && name.touched">*Please enter your name</span> -->
+    </div>
+    <span *ngIf="age.invalid && age.touched">Please enter a valid age</span>
+
+    <div class="inp">
+      <input
+        type="number"
+        required
+        #rno="ngModel"
+        name="rno"
+        placeholder="Roll Number"
+        min="200"
+        max="299"
+        ngModel
+      />
+      <!-- <span *ngIf="name.invalid && name.touched">*Please enter your name</span> -->
+    </div>
+    <span *ngIf="rno.invalid && rno.touched">Please enter a valid Roll Number</span>
+
+    <div class="event">
+      <p>Select an event</p>
+      <select name="event" id="events" #event="ngModel" ngModel>
+        <option value="event1">Event1</option>
+        <option value="event2">Event2</option>
+      </select>
+    </div>
+    <span *ngIf="event.touched">Please Select an Event</span>
+
+    <button class="btn btn-primary">Submit</button>
+  </div>
+</form>

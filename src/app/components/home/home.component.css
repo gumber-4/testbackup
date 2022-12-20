@@ -1,0 +1,49 @@
+.name {
+  text-align: center;
+  margin-top: 5vh;
+  font-size: medium;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.form {
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+}
+.displayStud {
+  display: flex;
+  justify-content: space-around;
+  flex: 50%;
+ 
+}
+.display{
+  margin-top: 20vh;
+}
+.event1 {
+  margin-top: 20px;
+  box-shadow: 1px 2px 10px black;
+  background-color: black;
+  color: white;
+}
+.event2 {
+  margin-top: 20px;
+  box-shadow: 1px 2px 10px black;
+  background-color: black;
+  color: white;
+}
+.event1 p,.event2 p  {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  padding-left: 20px;
+  text-align: center;
+  color: black;
+  padding-top:5px;
+  margin: 2px;
+  margin-right:5vh;
+  background-color: bisque;
+  border-radius: 5px;
+}

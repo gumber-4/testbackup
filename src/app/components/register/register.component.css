@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  flex-wrap: wrap;
+  margin: 10vh 40vh;
+  border-radius: 5px;
+  height: 350px;
+}
+span{
+  margin-left: 20px;
+  color: red;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+input,
+select,
+label {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 15rem;
+}
+
+.event p{
+  margin-left: 20px;
+  margin-top: 10px;
+  color: white;
+}
+button{
+  margin-left: 20px;
+  margin-top: 10px;
+}

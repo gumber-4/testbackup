@@ -1,0 +1,33 @@
+<div class="main">
+  <h1>Admin Login System</h1>
+
+  <form #myForm="ngForm" (ngSubmit)="submit(myForm.value)">
+    <div class="formInside">
+      <div class="formBox">
+        <input
+          type="text"
+          #username="ngModel"
+          placeholder="username"
+          name="name"
+          ngModel
+        />
+        <input
+          type="password"
+          #username="ngModel"
+          placeholder="Password"
+          name="pass"
+          ngModel
+        />
+        <button class="btn btn-lg btn-primary">Submit</button>
+      </div>
+      <div class="display">
+        <h2 *ngIf="error && loginFlag">
+          Login Failed, Please Check your credentials
+        </h2>
+        <h2 *ngIf="!error && !loginFlag">
+          Login Successfull, Redirecting to Home page
+        </h2>
+      </div>
+    </div>
+  </form>
+</div>
